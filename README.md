@@ -86,17 +86,6 @@ en un entorno de prueba o modifica el código para no ejecutar el bloque
 - Se agregó un helper visual (separadores y timestamps) para que la demo en
   video muestre claramente qué paso se está ejecutando.
 
-## Sugerencias y mejoras futuras
-
-- Añadir una opción `--dry-run` o una variable de entorno `DRY_RUN=1` para
-  simular las peticiones sin enviarlas al BaaS (útil para demos sin tocar datos).
-- Añadir confirmación interactiva antes de ejecutar operaciones destructivas
-  (por ejemplo, antes de DELETE).
-- Añadir tests (pytest) que mockeen las llamadas a `requests` para validar
-  la lógica sin tocar el servicio remoto.
-- Registrar las respuestas a un fichero de log (niveles INFO/DEBUG) para
-  poder revisar la demo más tarde.
-
 ## Conclusiones de la actividad
 
 - Se implementó un cliente CRUD sencillo y didáctico que cubre los casos
@@ -108,7 +97,3 @@ en un entorno de prueba o modifica el código para no ejecutar el bloque
   mostrando paso, timestamp y resultado esperado, lo que facilita la
   comunicación en un video o presentación.
 
-Si quieres, puedo:
-- Añadir un `README` más detallado con ejemplos de salida copiable.
-- Implementar `--dry-run` en `crud.py` y documentarlo aquí.
-- Añadir tests unitarios que mockeen `requests`.
