@@ -1,0 +1,8 @@
+services:
+  dev-python:
+    image: python:3.11
+    container_name: tec-mx-act08
+    volumes:
+      - ./:/app
+    working_dir: /app
+    tty: true
